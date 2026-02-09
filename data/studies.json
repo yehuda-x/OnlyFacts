@@ -1,0 +1,146 @@
+[
+  {
+    "id": "s1",
+    "title": "IPCC Sixth Assessment Report — Summary for Policymakers",
+    "authors": "Intergovernmental Panel on Climate Change (IPCC)",
+    "year": 2021,
+    "summary": "Comprehensive assessment of observed climate change, attribution, projected impacts, and mitigation pathways. Publicly available synthesis summarizing peer-reviewed literature.",
+    "source": "https://www.ipcc.ch/assessment-report/ar6/"
+  },
+  {
+    "id": "s2",
+    "title": "COVID-19: A global pandemic and the scientific response",
+    "authors": "World Health Organization / peer-reviewed sources",
+    "year": 2020,
+    "summary": "Collection of public reports and peer-reviewed studies summarizing virology, epidemiology, and public-health interventions during the COVID-19 pandemic.",
+    "source": "https://www.who.int/" 
+  },
+  {
+    "id": "s3",
+    "title": "Vaccines and Vaccine Safety: Evidence Reviews",
+    "authors": "World Health Organization & systematic reviews",
+    "year": 2019,
+    "summary": "Systematic reviews and meta-analyses showing vaccine efficacy and safety profiles across large populations; reliable public sources.",
+    "source": "https://www.who.int/teams/immunization-vaccines-and-biologicals"
+  },
+  {
+    "id": "s4",
+    "title": "Effectiveness of face masks for reducing transmission of SARS-CoV-2: a systematic review",
+    "authors": "Multiple peer-reviewed authors (meta-analyses)",
+    "year": 2021,
+    "summary": "Meta-analytic evidence pooled from observational and experimental studies on mask effectiveness in community and healthcare settings.",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/"
+  },
+  {
+    "id": "s5",
+    "title": "Global trends in biodiversity and species extinction risk",
+    "authors": "IPBES / biodiversity research",
+    "year": 2019,
+    "summary": "Assessments on species loss, drivers of biodiversity decline, and conservation evidence from public reports and peer-reviewed literature.",
+    "source": "https://ipbes.net/"
+  },
+  {
+    "id": "s6",
+    "title": "Climate change impacts on extreme weather events",
+    "authors": "Nature / Science articles (open summaries)",
+    "year": 2020,
+    "summary": "Peer-reviewed studies linking anthropogenic warming to increased frequency and intensity of heatwaves, heavy precipitation, and storm intensity.",
+    "source": "https://www.nature.com/"
+  },
+  {
+    "id": "s7",
+    "title": "The reproducibility crisis in science: evidence and proposals",
+    "authors": "Meta-research studies",
+    "year": 2015,
+    "summary": "Analyses showing replication rates across fields and recommendations for improving reproducibility, transparency, and data sharing.",
+    "source": "https://www.pnas.org/"
+  },
+  {
+    "id": "s8",
+    "title": "Antimicrobial resistance: global report",
+    "authors": "WHO / CDC public reports",
+    "year": 2018,
+    "summary": "Evidence on rising antimicrobial resistance, surveillance data, and best practices to limit spread — public health sources.",
+    "source": "https://www.cdc.gov/drugresistance/index.html"
+  },
+  {
+    "id": "s9",
+    "title": "Nutritional epidemiology: challenges and opportunities",
+    "authors": "Large-scale cohort studies and reviews",
+    "year": 2016,
+    "summary": "Reviews discussing bias, confounding, and interpretation in nutritional studies; guidance for robust inference.",
+    "source": "https://www.ncbi.nlm.nih.gov/pmc/"
+  },
+  {
+    "id": "s10",
+    "title": "Smoking and health: 50 years of evidence and policy",
+    "authors": "Public health agencies and systematic reviews",
+    "year": 2014,
+    "summary": "Consolidated evidence linking tobacco use with morbidity and mortality and evaluating policy interventions.",
+    "source": "https://www.who.int/"
+  },
+  {
+    "id": "s11",
+    "title": "Air pollution and public health: global exposure estimates",
+    "authors": "WHO / Lancet Commission summaries",
+    "year": 2019,
+    "summary": "Estimates of deaths attributable to air pollution and evidence of health impacts across populations.",
+    "source": "https://www.thelancet.com/"
+  },
+  {
+    "id": "s12",
+    "title": "Renewable energy pathways and decarbonization",
+    "authors": "IEA / peer-reviewed analyses",
+    "year": 2020,
+    "summary": "Evidence-based roadmaps for energy transition, costs, and technology feasibility from public agencies and journals.",
+    "source": "https://www.iea.org/"
+  },
+  {
+    "id": "s13",
+    "title": "Mental health prevalence and treatment gaps: systematic reviews",
+    "authors": "WHO / mental health research",
+    "year": 2018,
+    "summary": "Reviews documenting prevalence of common mental disorders and barriers to access care worldwide.",
+    "source": "https://www.who.int/mental_health/"
+  },
+  {
+    "id": "s14",
+    "title": "Food safety and outbreaks: surveillance reports",
+    "authors": "CDC / EFSA / public health reports",
+    "year": 2017,
+    "summary": "Examples of outbreak investigations and best-practice surveillance to identify foodborne disease sources.",
+    "source": "https://www.cdc.gov/foodsafety/index.html"
+  },
+  {
+    "id": "s15",
+    "title": "Ocean acidification and marine ecosystems",
+    "authors": "NOAA / marine science journals",
+    "year": 2019,
+    "summary": "Empirical studies documenting changes in ocean chemistry and impacts on calcifying organisms and fisheries.",
+    "source": "https://www.noaa.gov/"
+  },
+  {
+    "id": "s16",
+    "title": "Global economic inequality and data-driven analyses",
+    "authors": "World Bank / academic studies",
+    "year": 2018,
+    "summary": "Analyses of income and wealth distributions and policy evaluations using public datasets.",
+    "source": "https://www.worldbank.org/"
+  },
+  {
+    "id": "s17",
+    "title": "Energy systems and health co-benefits of mitigation",
+    "authors": "Interdisciplinary reviews",
+    "year": 2020,
+    "summary": "Evidence on how decarbonization can produce immediate public health benefits by reducing pollution exposure.",
+    "source": "https://www.who.int/"
+  },
+  {
+    "id": "s18",
+    "title": "Transparency and open data in scientific publishing",
+    "authors": "Scholarly communications research",
+    "year": 2021,
+    "summary": "Studies and policy recommendations encouraging open data, preregistration, and reproducible workflows in research.",
+    "source": "https://www.ncbi.nlm.nih.gov/pmc/"
+  }
+]

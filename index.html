@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>מנפצי השקרים — OnlyFacts</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>מנפצי השקרים</h1>
+        <p class="tagline">הוכחות חותכות לשקרים ולמיתוסים — פוסט חדש כל יום</p>
+      </div>
+      <nav class="main-nav" aria-label="תפריט ראשי">
+        <a href="#posts-section">פוסטים</a>
+        <a href="#research-section">מחקרים</a>
+        <a href="#about">אודות</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>פרסם הוכחה חדשה</h2>
+      <form id="postForm">
+        <label>כותרת
+          <input id="title" required placeholder="כותרת הפוסט" />
+        </label>
+        <label>תקציר
+          <input id="summary" placeholder="תקציר קצר" />
+        </label>
+        <label>תיאור / הוכחה
+          <textarea id="content" rows="5" placeholder="הסבר מפורט והראיות"></textarea>
+        </label>
+        <label>מקור (URL)
+          <input id="source" placeholder="https://" />
+        </label>
+        <div class="form-actions">
+          <button type="submit">פרסם</button>
+          <button type="button" id="clearAll">מחק הכל</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="posts-section" class="panel">
+      <h2>פוסטים</h2>
+      <input id="search" placeholder="חפש כותרת או טקסט" aria-label="חיפוש פוסטים" />
+      <div id="posts" class="posts-grid" role="list"></div>
+    </section>
+
+    <section id="research-section" class="panel">
+      <h2>מאגר מחקרים ומקורות</h2>
+      <p class="muted">מאגר של מחקרים ומקורות ציבוריים אמינים — חפשו לפי כותרת, מחבר או שנה.</p>
+      <div class="research-controls">
+        <input id="researchSearch" placeholder="חפש במחקרים (כותרת/מחבר/שנה)" />
+        <select id="yearFilter"><option value="">כל השנים</option></select>
+      </div>
+      <div id="researchList" class="research-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="about" class="site-footer">
+    <div class="container">
+      <p>נוצר עם ❤️ — OnlyFacts — אתר להצגת הוכחות מבוססות וניטור טענות ציבוריות.</p>
+      <p class="muted">מקורות ברורים בלבד; אין מקום לדוקסינג או חשיפת מידע מסווג.</p>
+    </div>
+  </footer>
+
+  <!-- Research detail modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" aria-label="סגור">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
