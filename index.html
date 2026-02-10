@@ -21,38 +21,52 @@
     </div>
   </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h2>פתחו את האמת</h2>
+      <p>מאגר מקורות מדעיים ודוקומנטציה אמינה לחשיפת שקרים וטענות שגויות ברחבי העולם</p>
+      <div class="hero-cta">
+        <a href="#posts-section" class="btn btn-primary">בואו נתחיל</a>
+        <a href="#research-section" class="btn btn-secondary">דפדפו במחקרים</a>
+      </div>
+    </div>
+  </section>
+
   <main class="container">
     <section class="panel">
       <h2>פרסם הוכחה חדשה</h2>
+      <p class="panel-subtitle">שתפו טענה שברצונכם לבדוק או הוכחה שגילחתם</p>
       <form id="postForm">
         <label>כותרת
           <input id="title" required placeholder="כותרת הפוסט" />
         </label>
         <label>תקציר
-          <input id="summary" placeholder="תקציר קצר" />
+          <input id="summary" placeholder="תקציר קצר (עד 200 תווים)" maxlength="200" />
         </label>
-        <label>תיאור / הוכחה
-          <textarea id="content" rows="5" placeholder="הסבר מפורט והראיות"></textarea>
+        <label>תיאור / הוכחה (עד 1000 תווים)
+          <textarea id="content" rows="6" placeholder="הסבר מפורט של התגלית, הראיות, וחשיבות גילוי זה" maxlength="1000"></textarea>
+          <span class="char-count"><span id="contentCount">0</span>/1000</span>
         </label>
         <label>מקור (URL)
           <input id="source" placeholder="https://" />
         </label>
         <div class="form-actions">
-          <button type="submit">פרסם</button>
-          <button type="button" id="clearAll">מחק הכל</button>
+          <button type="submit" class="btn btn-primary">פרסם</button>
+          <button type="button" id="clearAll" class="btn btn-danger">מחק הכל</button>
         </div>
       </form>
     </section>
 
     <section id="posts-section" class="panel">
-      <h2>פוסטים</h2>
+      <h2>פוסטים קהילה</h2>
+      <p class="panel-subtitle">הוכחות וטענות שהוגשו על ידי משתמשים</p>
       <input id="search" placeholder="חפש כותרת או טקסט" aria-label="חיפוש פוסטים" />
       <div id="posts" class="posts-grid" role="list"></div>
     </section>
 
     <section id="research-section" class="panel">
       <h2>מאגר מחקרים ומקורות</h2>
-      <p class="muted">מאגר של מחקרים ומקורות ציבוריים אמינים — חפשו לפי כותרת, מחבר או שנה.</p>
+      <p class="panel-subtitle">מאגר של מחקרים ומקורות ציבוריים אמינים — חפשו לפי כותרת, מחבר או שנה.</p>
       <div class="research-controls">
         <input id="researchSearch" placeholder="חפש במחקרים (כותרת/מחבר/שנה)" />
         <select id="yearFilter"><option value="">כל השנים</option></select>
@@ -63,8 +77,25 @@
 
   <footer id="about" class="site-footer">
     <div class="container">
-      <p>נוצר עם ❤️ — OnlyFacts — אתר להצגת הוכחות מבוססות וניטור טענות ציבוריות.</p>
-      <p class="muted">מקורות ברורים בלבד; אין מקום לדוקסינג או חשיפת מידע מסווג.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>אודות</h4>
+          <p>OnlyFacts — אתר להצגת הוכחות מבוססות וניטור טענות ציבוריות בעולם.</p>
+        </div>
+        <div class="footer-section">
+          <h4>עקרונות</h4>
+          <ul>
+            <li>מקורות ברורים בלבד</li>
+            <li>אין דוקסינג או חשיפת מידע מסווג</li>
+            <li>אמת ופומביות ראשית</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>קצר</h4>
+          <p>נוצר עם ❤️ ותשוקה לאמת</p>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 OnlyFacts. כל הזכויות שמורות.</p>
     </div>
   </footer>
 
@@ -72,7 +103,7 @@
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-content" role="dialog" aria-modal="true">
       <button id="modalClose" class="modal-close" aria-label="סגור">×</button>
-      <div id="modalBody"></div>
+      <div id="modalBody" class="modal-body"></div>
     </div>
   </div>
 
