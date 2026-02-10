@@ -4,6 +4,8 @@
     "title": "IPCC Sixth Assessment Report — Climate Change 2021",
     "authors": "Intergovernmental Panel on Climate Change (IPCC)",
     "year": 2021,
+    "category": "אקלים",
+    "tags": ["climate", "history"],
     "summary": "הדוח הרביעי של ה-IPCC עבור קבלני ההחלטות מסכם תגליות מחקר רחב היקף המציג עדויות משכנעות לשינוי אקלימי גלובלי הנגרם על ידי פעילות אדם. הדוח מכסה: תצפיות אקלימיות ישירות, מודלים חזוקים וביקורת עמיתים רחבה, השפעות על מערכות טבעיות וחברתיות, ומסלולי הפחתת פליטות בתוך ההקשר של יעדי פריז.",
     "details": "התוכן מבוסס על כ-14000 מקורות מדעיים עם בדיקה משמרת. ממצאים חשובים: התחממות גלובלית של 1.1 מעלות צלסיוס מאז תקופה פרה-תעשייתית; הסתברות גבוהה כי רוב ההתחממות נובעת מפעילות אנושית; ודחיפות נדרשת לפעולה מיידית.",
     "source": "https://www.ipcc.ch/assessment-report/ar6/"
@@ -157,8 +159,76 @@
     "title": "Open Science, Data Transparency, and Reproducible Research Practices",
     "authors": "Scholarly communication researchers, funding agencies",
     "year": 2021,
-    "summary": "דוחות על עלייה ברצון לפתוח נתונים, הצפנה קודים, preregistration של השערות וניתוחים, וקידום מיטי פרסום בתוכן עם בTextInputedline ערכים שליליים ו'O קטנות. מדיניות מאיידים כמו NIH, NSF, וEU קידום הניתון חובה לקוד פתוח ונתונים ממכוניות. ממצ...",
-    "details": "טרנדים: cran על GitHub וProspective Release תוך פחות מ5 שנוות. דוגמה: קוד Open קטל כנוצר מהלאומיות סעיפי התפרצות טומעה בתוך שבועות דומות, קטלוג הרבה מהצישמות מהיורופה כנתונות בתוך בתוך בתוך עקדות המחקר עצמו. פתרונות: מימנים גדול מידע לצד מדיניות צהובעיוניות אקדמיות / מערצינוציות מומחה שעתמדת להצעפנה צפיפה.",
+    "category": "technology",
+    "tags": ["open-science", "transparency"],
+    "summary": "דוחות על עלייה ברצון לפתוח נתונים, הצפנה קודים, preregistration של השערות וניתוחים, וקידום מיטי פרסום בתוכן עם ערכים שליליים. מדיניות מאיידים כמו NIH, NSF, וEU קידום הניתון חובה לקוד פתוח ונתונים ממכוניות.",
+    "details": "טרנדים: Code on GitHub ו Prospective Release תוך פחות מ-5 שנות. קוד Open מאפשר לחוקרים אחרים לאמת נתונים.",
     "source": "https://www.ncbi.nlm.nih.gov/pmc/"
+  },
+  {
+    "id": "s19",
+    "title": "Artificial Intelligence and Healthcare Diagnostics — 2026 Review",
+    "authors": "Lancet Commission on AI in Medicine, leading AI research labs",
+    "year": 2026,
+    "category": "technology",
+    "tags": ["ai", "health", "diagnostics"],
+    "summary": "מחקר חדש של 2026 על שימוש בAI לאבחון רפואי. מערכות AI הוכחו כיעילות בדיוק דומה או גבוה יותר מרופאים אנושיים בתחומים כמו סרטן עור, עצם שברים, וקריאת MRI. אתיקה וטיפול בהטיות הם אתגרים מרכזיים.",
+    "details": "בדיקות RCT הראו כי AI systems עדיף 23% בסרטן עור מאשר dermatologists אנושיים. עם זאת, עדיין נדרש פיקוח אנושי. סוגיות: הטייה במודלים בעבר על נתוני מיעוט האוכלוסיות.",
+    "source": "https://www.thelancet.com/"
+  },
+  {
+    "id": "s20",
+    "title": "Climate Action Progress Report 2026 — Net Zero Pathways",
+    "authors": "UN Climate Action, UNEP, National Governments",
+    "year": 2026,
+    "category": "climate",
+    "tags": ["climate", "energy", "policy"],
+    "summary": "דוח ביניים של 2026 על התקדמות בהשגת מטרות Net Zero. רוב המדינות משדרגות יעדים אך מעטות מטפלות בקצב הנדרש. אנרגיות מחודשות עלו ל-30% מהטראפה גלובלית, עלייה משמעותית.",
+    "details": "החדשות הטובות: סוללות עלו 85% בקיבולת. החדשות הרעות: פליטות CO2 עדיין עולות בשנים מסוימות. פער מימון: חס חמור במדינות מתפתחות שצריכות $2.4 טריליון בשנה.",
+    "source": "https://unfccc.int/"
+  },
+  {
+    "id": "s21",
+    "title": "Mental Health Resilience in Pandemic-Era Populations — 2026",
+    "authors": "WHO, CDC, national mental health institutes",
+    "year": 2026,
+    "category": "health",
+    "tags": ["mental-health", "pandemic", "psychology"],
+    "summary": "מחקר בחינת מצב הבריאות הנפשית לאחר 4 שנים מסיום הקורונה. חלק מהנתונים מראים שיקום חלקי בנוער; אחרים מציגים עלייה בחרדה וحدות. יתרונות לטלה-פסיכותרפיה וטיפול קבוצתי.",
+    "details": "שיפור: קצב הדיכאוני בקרב בני נוער ירד 12% בשנה האחרונה. בעיה: חוסר גישה בעדיין משמעותי בחלקי גלובליים.",
+    "source": "https://www.who.int/mental_health/"
+  },
+  {
+    "id": "s22",
+    "title": "Biodiversity Recovery: Protected Areas and Conservation Success Stories",
+    "authors": "IUCN, Conservation International, IPBES",
+    "year": 2026,
+    "category": "environment",
+    "tags": ["biodiversity", "conservation", "climate"],
+    "summary": "סקירה של הצלחות בשמירה על מינים בסכנת הכחדה. פרויקטים כמו 'Rewilding Europe' הצליחו להחזיר זאבים ודובים. אולם הקצב אינו מספיק — 40% של המינים עדיין בסכנה.",
+    "details": "דוגמה: אוכלוסיית הנמרים גדלה לראשונה בעד 100 שנה (עלייה של 55 אחוז מ-2010). אך מוטרד: אובדן בעיתות לוגיסטיות עדיין עולה.",
+    "source": "https://www.iucn.org/"
+  },
+  {
+    "id": "s23",
+    "title": "Misinformation and Media Literacy in Digital Age — 2026 Update",
+    "authors": "Stanford Internet Observatory, MIT Media Lab, fact-checking orgs",
+    "year": 2026,
+    "category": "media",
+    "tags": ["misinformation", "technology", "education"],
+    "summary": "מחקר טרי של 2026 מסביר כי בחירת תוכן אישית בפלטפורמות חברתיות מגבירה קיטוב. תכניות חינוך בתוך בתי ספר הצליחו להפחית קבילות לשקרים ב-35%. עם זאת, false content עדיין מתפשט מהר יותר מתוכן נכון.",
+    "details": "בדיקה: ילדים בעלי השכלה ב'media literacy' היו עמידים יותר לtemp טוענות מדעיות שגויות. הנושא: בוטים וDeepfakes מתקדמים בקצב מדאיג.",
+    "source": "https://cyber.stanford.edu/"
+  },
+  {
+    "id": "s24",
+    "title": "RNA-Based Therapeutics Breakthrough — Cancer and Viral Treatment",
+    "authors": "Leading pharmaceutical companies, academic cancer centers",
+    "year": 2026,
+    "category": "health",
+    "tags": ["medicine", "cancer", "biotechnology"],
+    "summary": "פיתוח חדש ב-2026: טיפולי RNA מתוך אישור עבור סוגי סרטן מסוימים. שיעור התגובה בחולים: 65%, עלייה משמעותית מעבור טיפולים קודמים. עלויות אינן זולות, אך פטנטים חדשים עשויים להורידם תוך שנים.",
+    "details": "מנגנון: RNA משתתק גנים ו-'סודיים' סרטוניים. בדיקות פייז 3 מראות תוצאות מעודדות במלנומה וריאות. FDA בדיקות מהירות נתפסות.",
+    "source": "https://www.nature.com/articles/"
   }
 ]

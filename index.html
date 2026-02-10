@@ -14,8 +14,8 @@
         <p class="tagline">הוכחות חותכות לשקרים ולמיתוסים — פוסט חדש כל יום</p>
       </div>
       <nav class="main-nav" aria-label="תפריט ראשי">
-        <a href="#posts-section">פוסטים</a>
         <a href="#research-section">מחקרים</a>
+        <a href="#debunk-section">הפרכות</a>
         <a href="#about">אודות</a>
       </nav>
     </div>
@@ -33,45 +33,27 @@
   </section>
 
   <main class="container">
-    <section class="panel">
-      <h2>פרסם הוכחה חדשה</h2>
-      <p class="panel-subtitle">שתפו טענה שברצונכם לבדוק או הוכחה שגילחתם</p>
-      <form id="postForm">
-        <label>כותרת
-          <input id="title" required placeholder="כותרת הפוסט" />
-        </label>
-        <label>תקציר
-          <input id="summary" placeholder="תקציר קצר (עד 200 תווים)" maxlength="200" />
-        </label>
-        <label>תיאור / הוכחה (עד 1000 תווים)
-          <textarea id="content" rows="6" placeholder="הסבר מפורט של התגלית, הראיות, וחשיבות גילוי זה" maxlength="1000"></textarea>
-          <span class="char-count"><span id="contentCount">0</span>/1000</span>
-        </label>
-        <label>מקור (URL)
-          <input id="source" placeholder="https://" />
-        </label>
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">פרסם</button>
-          <button type="button" id="clearAll" class="btn btn-danger">מחק הכל</button>
-        </div>
-      </form>
-    </section>
 
-    <section id="posts-section" class="panel">
-      <h2>פוסטים קהילה</h2>
-      <p class="panel-subtitle">הוכחות וטענות שהוגשו על ידי משתמשים</p>
-      <input id="search" placeholder="חפש כותרת או טקסט" aria-label="חיפוש פוסטים" />
-      <div id="posts" class="posts-grid" role="list"></div>
-    </section>
 
-    <section id="research-section" class="panel">
-      <h2>מאגר מחקרים ומקורות</h2>
-      <p class="panel-subtitle">מאגר של מחקרים ומקורות ציבוריים אמינים — חפשו לפי כותרת, מחבר או שנה.</p>
+    <section id="research-section" class="panel research-panel">
+      <h2>📚 מאגר מחקרים ומקורות</h2>
+      <p class="panel-subtitle">מחקרים מדעיים ודוקומנטציה אמינה מ-2018-2026</p>
       <div class="research-controls">
-        <input id="researchSearch" placeholder="חפש במחקרים (כותרת/מחבר/שנה)" />
-        <select id="yearFilter"><option value="">כל השנים</option></select>
+        <input id="researchSearch" placeholder="🔍 חפש במחקרים..." />
+        <select id="yearFilter"><option value="">📅 כל השנים</option></select>
+        <select id="categoryFilter"><option value="">🏷️ כל הקטגוריות</option></select>
       </div>
       <div id="researchList" class="research-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="debunk-section" class="panel debunk-panel">
+      <h2>🔬 הפרכות ודבונק</h2>
+      <p class="panel-subtitle">הסברים מדעיים לתיאוריות קונספירציה פופולאריות — למה הן שגויות</p>
+      <div class="debunk-controls">
+        <input id="debunkSearch" placeholder="🔍 חפש בהפרכות..." />
+        <select id="debunkTypeFilter"><option value="">🏷️ כל הסוגים</option></select>
+      </div>
+      <div id="debunkList" class="debunk-grid" aria-live="polite"></div>
     </section>
   </main>
 
@@ -107,6 +89,7 @@
     </div>
   </div>
 
+  <script src="data/debunks.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

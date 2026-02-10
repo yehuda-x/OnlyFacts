@@ -304,6 +304,113 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal()
   })
+
+  /* Debunk Section Initialization */
+  if (typeof debunks !== 'undefined' && debunks.length) {
+    renderDebunkTypesFilter()
+    renderDebunks()
+
+    document.getElementById('debunkList').addEventListener('click', e => {
+      const btn = e.target.closest('button.view')
+      if (!btn) return
+      const id = btn.dataset.id
+      const d = debunks.find(x => x.id === id)
+      if (!d) return
+      renderDebunkModal(d)
+    })
+
+    document.getElementById('debunkSearch').addEventListener('input', e =>
+      renderDebunks(e.target.value)
+    )
+
+    document.getElementById('debunkTypeFilter').addEventListener('change', () =>
+      renderDebunks(document.getElementById('debunkSearch').value)
+    )
+  }
 })
+
+/* Debunk Rendering */
+function renderDebunkTypesFilter() {
+  const sel = document.getElementById('debunkTypeFilter')
+  if (!sel || !debunks.length) return
+
+  const types = Array.from(new Set(debunks.map(d => d.type))).sort()
+  types.forEach(t => {
+    const opt = document.createElement('option')
+    opt.value = t
+    opt.textContent = t.charAt(0).toUpperCase() + t.slice(1)
+    sel.appendChild(opt)
+  })
+}
+
+function renderDebunks(filter = '') {
+  const container = document.getElementById('debunkList')
+  if (!debunks || !container) return
+
+  const type = document.getElementById('debunkTypeFilter')?.value
+  let list = debunks.slice()
+
+  if (type) list = list.filter(d => d.type === type)
+  if (filter) list = list.filter(d =>
+    (d.title + d.claim + d.reality).toLowerCase().includes(filter.toLowerCase())
+  )
+
+  if (!list.length) {
+    container.innerHTML = '<p>לא נמצאו הפרכות התואמות לחיפוש.</p>'
+    return
+  }
+
+  container.innerHTML = ''
+  list.forEach(d => {
+    const el = document.createElement('div')
+    el.className = 'debunk-item'
+
+    const claimPreview = d.claim.length > 150
+      ? escapeHtml(d.claim.slice(0, 150)) + '...'
+      : escapeHtml(d.claim)
+
+    el.innerHTML = `
+      <h4>${escapeHtml(d.title)}</h4>
+      <div class="meta">🔴 טענה: ${claimPreview}</div>
+      <p><strong style="color: var(--success);">✅ האמת:</strong> ${escapeHtml(d.reality)}</p>
+      <div class="research-actions">
+        <button data-id="${d.id}" class="view">🔍 הסברה מלא</button>
+      </div>
+    `
+    container.appendChild(el)
+  })
+}
+
+function renderDebunkModal(debunk) {
+  const html = `
+    <h3>🔬 ${escapeHtml(debunk.title)}</h3>
+
+    <h4 style="color: var(--danger);">❌ הטענה</h4>
+    <p><strong>${escapeHtml(debunk.claim)}</strong></p>
+
+    <h4 style="color: var(--success);">✅ האמת</h4>
+    <p>${escapeHtml(debunk.reality)}</p>
+
+    <h4>📖 הסברה מפורט</h4>
+    <p>${escapeHtml(debunk.explanation)}</p>
+
+    ${debunk.sources ? `
+      <h4>📚 מקורות אמינים</h4>
+      <p>${escapeHtml(debunk.sources)}</p>
+    ` : ''}
+
+    ${debunk.sources && Array.isArray(debunk.sources) ? `
+      <h4>🔗 קישורים</h4>
+      <ul>
+        ${debunk.sources.map(src => `<li><a class="link" href="${escapeHtml(src)}" target="_blank" rel="noopener">${escapeHtml(src)}</a></li>`).join('')}
+      </ul>
+    ` : ''}
+
+    <div style="margin-top: 20px; padding: 12px; background: rgba(0, 255, 136, 0.1); border-radius: 8px; border-left: 4px solid var(--success);">
+      <strong>💡 למה זה חשוב:</strong> הבנת כיצד תיאוריות קונספירציה פזות עוזרת לנו לזהות מידע שגוי ולהגן על עצמנו מפני דוחי שווא.
+    </div>
+  `
+  openModal(html)
+}
 
 
